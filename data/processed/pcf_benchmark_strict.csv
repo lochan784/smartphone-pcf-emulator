@@ -1,0 +1,15 @@
+manufacturer,model,storage_gb,pcf_kg_co2e,boundary,region,page,source_text,canon_model
+samsung,galaxy s23,128,54.0,cradle_to_grave,uk,2,galaxy s23 life cycle assessment 54.0 kg co2 eq.,galaxy s23
+samsung,galaxy s23 ultra,256,70.6,cradle_to_grave,uk,2,galaxy s23 ultra life cycle assessment: 70.6 kg co2 eq.,galaxy s23 ultra
+apple,iphone 12,64,70.0,cradle_to_grave,us,3,iphone 12 life cycle carbon emissions: 70 kg co2e,iphone 12
+apple,iphone 13,128,64.0,cradle_to_grave,us,3,iphone 13 life cycle carbon emissions: 64 kg co2e,iphone 13
+apple,iphone 14,128,61.0,cradle_to_grave,us,3,iphone 14 life cycle carbon emissions: 61 kg co2e,iphone 14
+apple,iphone 14 pro,128,65.0,cradle_to_grave,us,3,iphone 14 pro life cycle carbon emissions: 65 kg co2e,iphone 14 pro
+apple,iphone 14 pro max,128,73.0,cradle_to_grave,us,3,iphone 14 pro max life cycle carbon emissions: 73 kg co2e,iphone 14 pro max
+apple,iphone 15,128,56.0,cradle_to_grave,us,3,iphone 15 life cycle carbon emissions: 56 kg co2e,iphone 15
+apple,iphone 15 pro,128,66.0,cradle_to_grave,us,3,iphone 15 pro life cycle carbon emissions: 66 kg co2e,iphone 15 pro
+apple,iphone 15 pro max,256,75.0,cradle_to_grave,us,3,iphone 15 pro max life cycle carbon emissions: 75 kg co2e,iphone 15 pro max
+apple,iphone se 3,64,46.0,cradle_to_grave,us,3,iphone se (3rd generation) life cycle carbon emissions: 46 kg co2e,iphone se 3
+google,pixel 6,128,85.0,cradle_to_grave,us,3,estimated ghg emissions pixel 6 assuming three years of use: 85 kg co2e,pixel 6
+google,pixel 7,128,67.0,cradle_to_grave,us,3,estimated ghg emissions pixel 7 assuming three years of use: 67 kg co2e,pixel 7
+google,pixel 8 pro,128,87.0,cradle_to_grave,us,3,estimated ghg emissions pixel 8 pro assuming three years of use: 87 kg co2e,pixel 8 pro
