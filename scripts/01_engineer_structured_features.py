@@ -12,7 +12,6 @@ df = pd.read_csv(RAW_PATH)
 # Basic Cleaning
 # --------------------------
 
-# Ensure numeric types
 numeric_cols = [
     "battery_mah",
     "screen_size_in",
