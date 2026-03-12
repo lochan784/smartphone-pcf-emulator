@@ -1,0 +1,94 @@
+{
+  "ablation": [
+    {
+      "model": "Raw Physics (literature EFs, no calibration)",
+      "components": "Physics only",
+      "MAE": 24.179,
+      "RMSE": 25.503,
+      "Bias": -24.179,
+      "R2": -6.374
+    },
+    {
+      "model": "Physics + Posterior \u03b8 (no intercept)",
+      "components": "Physics + \u03b8_posterior",
+      "MAE": 22.754,
+      "RMSE": 24.156,
+      "Bias": -22.754,
+      "R2": -5.615
+    },
+    {
+      "model": "Physics + \u03b8 + Intercept \u03b2\u2080",
+      "components": "Physics + \u03b8 + \u03b2\u2080",
+      "MAE": 7.079,
+      "RMSE": 8.298,
+      "Bias": -1.753,
+      "R2": 0.219
+    },
+    {
+      "model": "Physics + \u03b8 + \u03b2\u2080 + Brand effects",
+      "components": "Physics + \u03b8 + \u03b2\u2080 + b_brand",
+      "MAE": 5.718,
+      "RMSE": 6.49,
+      "Bias": -0.098,
+      "R2": 0.523
+    },
+    {
+      "model": "Full Bayesian (\u03b8 + \u03b2\u2080 + Brand + h(s;\u03c6))",
+      "components": "All components",
+      "MAE": 5.661,
+      "RMSE": 6.437,
+      "Bias": -0.225,
+      "R2": 0.53
+    },
+    {
+      "model": "Full \u2212 Brand effects",
+      "components": "Physics + \u03b8 + \u03b2\u2080 + h(s;\u03c6)",
+      "MAE": 6.996,
+      "RMSE": 8.246,
+      "Bias": -1.88,
+      "R2": 0.229
+    },
+    {
+      "model": "Full \u2212 Residual h(s;\u03c6)",
+      "components": "Physics + \u03b8 + \u03b2\u2080 + Brand",
+      "MAE": 5.718,
+      "RMSE": 6.49,
+      "Bias": -0.098,
+      "R2": 0.523
+    },
+    {
+      "model": "Ridge Calibration (LOOCV baseline)",
+      "components": "sklearn Ridge on physics features",
+      "MAE": 5.01,
+      "RMSE": 6.83,
+      "Bias": -4.86,
+      "R2": 0.554
+    }
+  ],
+  "conformal_alpha_sensitivity": [
+    {
+      "alpha": 0.05,
+      "target": 0.95,
+      "coverage": 0.923,
+      "avg_width_kg": 24.622
+    },
+    {
+      "alpha": 0.1,
+      "target": 0.9,
+      "coverage": 0.923,
+      "avg_width_kg": 24.622
+    },
+    {
+      "alpha": 0.15,
+      "target": 0.85,
+      "coverage": 0.923,
+      "avg_width_kg": 24.622
+    },
+    {
+      "alpha": 0.2,
+      "target": 0.8,
+      "coverage": 0.846,
+      "avg_width_kg": 20.401
+    }
+  ]
+}

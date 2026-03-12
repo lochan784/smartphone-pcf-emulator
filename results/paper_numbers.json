@@ -1,0 +1,68 @@
+{
+  "dataset": {
+    "n_devices_raw": 968,
+    "n_gold_lca": 13,
+    "n_brands": 3
+  },
+  "bayesian": {
+    "rhat_max": 1.0,
+    "ess_min": 2078.0,
+    "divergences": 0,
+    "MAE_kg": 5.664,
+    "R2": 0.534,
+    "coverage_90pct": 1.0,
+    "posterior_battery_ef": 123.43,
+    "posterior_grid_ef": 0.4628,
+    "posterior_sigma": 7.9412
+  },
+  "conformal": {
+    "method": "LOOCV-conformal",
+    "alpha": 0.1,
+    "n_gold": 13,
+    "coverage": 0.923,
+    "target": 0.9,
+    "avg_width_kg": 24.622,
+    "passed": true
+  },
+  "ablation": {
+    "raw_physics_MAE": 24.179,
+    "posterior_theta_MAE": 22.754,
+    "intercept_MAE": 7.079,
+    "full_bayesian_MAE": 5.661,
+    "full_bayesian_R2": 0.53,
+    "ridge_loocv_MAE": 5.01,
+    "beta0_delta_MAE": -17.1
+  },
+  "counterfactual": {
+    "grid_decarbonisation": {
+      "delta_median_kg": -2.789,
+      "delta_pct": -4.07,
+      "ci_lo": -3.862,
+      "ci_hi": -1.897
+    },
+    "next_gen_battery": {
+      "delta_median_kg": -0.479,
+      "delta_pct": -0.7,
+      "ci_lo": -0.659,
+      "ci_hi": -0.306
+    },
+    "extended_lifetime": {
+      "delta_median_kg": 5.613,
+      "delta_pct": 8.19,
+      "ci_lo": 3.091,
+      "ci_hi": 8.48
+    }
+  },
+  "optimization": {
+    "baseline_pcf_kg": 45.985,
+    "recommended_budget": 50,
+    "recommended_levers": [
+      "grid_decarb",
+      "efficient_chip"
+    ],
+    "delta_pcf_median_kg": -6.183,
+    "delta_pcf_lo90_kg": -8.098,
+    "delta_pcf_hi90_kg": -4.329,
+    "prob_improvement": 1.0
+  }
+}

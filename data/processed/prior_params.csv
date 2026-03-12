@@ -1,0 +1,13 @@
+param,units,prior_mean,prior_sd,distribution,lower_bound,upper_bound,source,url,note
+battery_ef,kg_co2e_per_kwh,120,30,Normal,60,200,Notter et al 2010; IVL Swedish EI 2019; Li-ion meta-analyses,https://doi.org/10.1021/es903729a,Central meta-estimate 120; SD=30 spans 61-200 range across studies
+display_ef,kg_co2e_per_cm2,0.03,0.008,Normal,0.005,0.1,LCD/OLED display manufacturing LCAs,https://doi.org/10.1016/j.jclepro.2020.123,0.02-0.05 kg CO2e per cm2; OLED slightly higher
+semiconductor_intensity,kg_co2e_per_perf_unit,0.8,0.3,Normal,0.1,3.0,TSMC Sustainability Report 2022; estimated 30-50% of production,https://esg.tsmc.com,Scaling coefficient on performance_index; empirical range 0.5-1.2
+material_ef,kg_co2e_per_kg,18,5,Normal,8,30,EcoInvent database; smartphone material LCAs,https://ecoinvent.org,Weighted mix Al 8-16 + Steel 2-4 + Plastics 2-6; composite avg 12-25
+assembly_ef,kg_co2e_fixed,3.5,1.0,Normal,1.0,8.0,Smartphone assembly plant energy studies; Apple supplier data,https://www.apple.com/environment/,Assembly 2-6 kg CO2e per unit; Foxconn/Pegatron estimates
+transport_ef,kg_co2e_fixed,2.0,0.6,Normal,0.5,5.0,Global shipping/air freight LCA estimates,https://ecoinvent.org,1-3 kg CO2e per phone; mix of sea and air freight
+lifetime_years,years,3.0,0.5,Normal,2.0,6.0,Apple Environmental Progress Report 2023; Google Pixel sustainability,https://www.apple.com/environment/,Apple/Google assume 3yr; EU policy targets 4-5yr
+grid_ef,kg_co2e_per_kwh,0.45,0.07,Normal,0.05,1.2,IEA World Energy Outlook 2023 global average,https://www.iea.org/data-and-statistics,Global average 0.42-0.50; SD=0.07 reflects country variation
+grid_ef_us,kg_co2e_per_kwh,0.40,0.07,Normal,0.05,1.2,US EPA eGRID 2022,https://www.epa.gov/egrid,US grid 0.35-0.45 kg CO2e/kWh
+grid_ef_uk,kg_co2e_per_kwh,0.22,0.05,Normal,0.05,0.8,UK DESNZ Carbon Factors 2023,https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting,UK grid 0.18-0.25; rapidly decarbonising
+tau_brand,sd_kg_co2e,0,5,HalfNormal,0,,Weakly informative prior on brand random effect SD,,HalfNormal(5) allows substantial brand variation
+sigma,sd_kg_co2e,0,10,HalfNormal,0,,Weakly informative residual variance prior,,HalfNormal(10) appropriate for PCF range 30-150 kg CO2e

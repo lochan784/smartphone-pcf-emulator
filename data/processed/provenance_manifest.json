@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-02-19T04:03:13.952276+00:00",
+  "train_rows": 968,
+  "gold_rows": 13,
+  "gold_sha256": "64521a5f65475c6b0e015a0b92a7e3045948f6ca07c6774238d0518fc915c5ff",
+  "train_sha256": "dc4fa9a257015fe2f1d23cacb3bf39e75713018403840b505bc058227dff8058",
+  "note": "gold_holdout.csv is LOCKED \u2014 do not use for fitting"
+}

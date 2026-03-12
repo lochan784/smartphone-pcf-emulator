@@ -1,0 +1,39 @@
+{
+  "run": {
+    "chains": 4,
+    "draws": 3000,
+    "tune": 1500,
+    "seed": 42,
+    "target_accept": 0.95
+  },
+  "diagnostics": {
+    "rhat_max": 1.0,
+    "ess_min": 2829.0,
+    "divergences": 0,
+    "passed": true
+  },
+  "metrics": {
+    "MAE": 5.649,
+    "RMSE": 6.398,
+    "Bias": -0.246,
+    "R2": 0.536,
+    "coverage_90pct": 1.0,
+    "coverage_95pct": 1.0
+  },
+  "posterior_means": {
+    "battery_ef": 122.8738,
+    "display_ef": 0.0307,
+    "material_ef": 18.496,
+    "semiconductor_intensity": 0.8175,
+    "assembly_ef": 3.5741,
+    "transport_ef": 2.0298,
+    "lifetime_years": 3.1165,
+    "grid_ef": 0.4628,
+    "beta0": 20.9994,
+    "sigma": 7.9533
+  },
+  "baselines": {
+    "raw_physics_mae": 7.74,
+    "ridge_loocv_mae": 5.01
+  }
+}

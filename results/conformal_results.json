@@ -1,0 +1,18 @@
+{
+  "method_A_split": {
+    "n_calibration": 193,
+    "q": 8.552,
+    "coverage": 0.846,
+    "note": "Synthetic calibration \u2014 exchangeability violated"
+  },
+  "method_B_loocv": {
+    "n_gold": 13,
+    "coverage": 0.923,
+    "avg_width_kg": 24.622,
+    "target": 0.9,
+    "passed": true,
+    "note": "LOOCV-conformal on gold \u2014 exchangeability valid"
+  },
+  "reported_method": "method_B_loocv",
+  "alpha": 0.1
+}

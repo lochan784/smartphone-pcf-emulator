@@ -1,0 +1,32 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv
+.venv311
+311/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files (adjust if needed)
+models/*.nc
+models/*.joblib
+results/*.png
+results/*.pdf
+EOF

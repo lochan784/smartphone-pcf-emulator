@@ -1,0 +1,40 @@
+scenario,scenario_label,model,brand,declared_pcf,delta_median,delta_lo90,delta_hi90
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 14 pro max,apple,73.0,-2.873,-3.979,-1.954
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 13,apple,64.0,-2.153,-2.982,-1.465
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 15,apple,56.0,-2.183,-3.023,-1.485
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 14,apple,61.0,-2.179,-3.018,-1.482
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 14 pro,apple,65.0,-2.127,-2.945,-1.447
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 12,apple,70.0,-3.323,-4.602,-2.261
+grid_decarbonisation,Grid decarbonisation (−30%),pixel 8 pro,google,87.0,-3.323,-4.602,-2.261
+grid_decarbonisation,Grid decarbonisation (−30%),pixel 7,google,67.0,-2.894,-4.008,-1.969
+grid_decarbonisation,Grid decarbonisation (−30%),pixel 6,google,85.0,-3.067,-4.246,-2.086
+grid_decarbonisation,Grid decarbonisation (−30%),galaxy s23 ultra,samsung,70.6,-3.323,-4.602,-2.261
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 15 pro max,apple,75.0,-2.892,-4.005,-1.968
+grid_decarbonisation,Grid decarbonisation (−30%),galaxy s23,samsung,54.0,-2.592,-3.589,-1.763
+grid_decarbonisation,Grid decarbonisation (−30%),iphone 15 pro,apple,66.0,-3.323,-4.602,-2.261
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 14 pro max,apple,73.0,-0.493,-0.679,-0.316
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 13,apple,64.0,-0.37,-0.509,-0.236
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 15,apple,56.0,-0.375,-0.516,-0.24
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 14,apple,61.0,-0.374,-0.515,-0.239
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 14 pro,apple,65.0,-0.365,-0.503,-0.234
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 12,apple,70.0,-0.571,-0.785,-0.365
+next_gen_battery,Next-gen battery chemistry (−25%),pixel 8 pro,google,87.0,-0.571,-0.785,-0.365
+next_gen_battery,Next-gen battery chemistry (−25%),pixel 7,google,67.0,-0.497,-0.684,-0.318
+next_gen_battery,Next-gen battery chemistry (−25%),pixel 6,google,85.0,-0.526,-0.725,-0.337
+next_gen_battery,Next-gen battery chemistry (−25%),galaxy s23 ultra,samsung,70.6,-0.571,-0.785,-0.365
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 15 pro max,apple,75.0,-0.497,-0.683,-0.318
+next_gen_battery,Next-gen battery chemistry (−25%),galaxy s23,samsung,54.0,-0.445,-0.613,-0.285
+next_gen_battery,Next-gen battery chemistry (−25%),iphone 15 pro,apple,66.0,-0.571,-0.785,-0.365
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 14 pro max,apple,73.0,5.783,3.185,8.736
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 13,apple,64.0,4.334,2.387,6.548
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 15,apple,56.0,4.395,2.42,6.639
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 14,apple,61.0,4.386,2.416,6.627
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 14 pro,apple,65.0,4.281,2.357,6.467
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 12,apple,70.0,6.689,3.683,10.105
+extended_lifetime,Extended device lifetime (3→5 yr),pixel 8 pro,google,87.0,6.689,3.683,10.105
+extended_lifetime,Extended device lifetime (3→5 yr),pixel 7,google,67.0,5.826,3.208,8.801
+extended_lifetime,Extended device lifetime (3→5 yr),pixel 6,google,85.0,6.172,3.399,9.324
+extended_lifetime,Extended device lifetime (3→5 yr),galaxy s23 ultra,samsung,70.6,6.689,3.683,10.105
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 15 pro max,apple,75.0,5.822,3.206,8.795
+extended_lifetime,Extended device lifetime (3→5 yr),galaxy s23,samsung,54.0,5.217,2.873,7.882
+extended_lifetime,Extended device lifetime (3→5 yr),iphone 15 pro,apple,66.0,6.689,3.683,10.105

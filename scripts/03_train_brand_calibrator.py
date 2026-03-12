@@ -20,7 +20,7 @@ X_cols = [
     "carbon_materials",
     "carbon_assembly",
     "carbon_transport",
-    "carbon_use"
+    "carbon_use",
 ]
 
 # Brand dummies
@@ -29,10 +29,12 @@ X_full = pd.concat([merged[X_cols], X_brand], axis=1)
 
 y = merged["pcf_kg_co2e_y"]
 
-pipeline = Pipeline([
-    ("scaler", StandardScaler()),
-    ("ridge", RidgeCV(alphas=[0.01,0.1,1,10,100], cv=5))
-])
+pipeline = Pipeline(
+    [
+        ("scaler", StandardScaler()),
+        ("ridge", RidgeCV(alphas=[0.01, 0.1, 1, 10, 100], cv=5)),
+    ]
+)
 
 pipeline.fit(X_full, y)
 
@@ -44,10 +46,10 @@ bias = (y_pred - y).mean()
 r2 = r2_score(y, y_pred)
 
 print("\n--- Brand-Aware Calibration (In-Sample) ---")
-print("MAE:", round(mae,2))
-print("RMSE:", round(rmse,2))
-print("Bias:", round(bias,2))
-print("R2:", round(r2,3))
+print("MAE:", round(mae, 2))
+print("RMSE:", round(rmse, 2))
+print("Bias:", round(bias, 2))
+print("R2:", round(r2, 3))
 
 os.makedirs("models", exist_ok=True)
 joblib.dump(pipeline, MODEL_PATH)

@@ -1,0 +1,79 @@
+{
+  "report_generated_at": "2026-02-19T06:30:54.674897+00:00",
+  "phases_completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "all_gates_passed": true,
+  "gates": {
+    "G1_bayesian_convergence": {
+      "rhat_max": 1.0,
+      "ess_min": 2078.0,
+      "divergences": 0,
+      "passed": true
+    },
+    "G2_conformal_coverage": {
+      "coverage": 0.923,
+      "target": 0.85,
+      "passed": true
+    },
+    "G3_mae_improvement": {
+      "raw_physics_MAE": 24.179,
+      "full_bayesian_MAE": 5.661,
+      "improvement_kg": 18.518,
+      "passed": true
+    },
+    "G4_counterfactual_plausibility": {
+      "grid_negative": true,
+      "battery_negative": true,
+      "lifetime_positive": true,
+      "passed": true
+    },
+    "G5_optimiser_improvement": {
+      "prob_improvement": 1.0,
+      "delta_pcf_median": -6.183,
+      "passed": true
+    }
+  },
+  "key_outputs": {
+    "posterior": "models/bayesian_emulator_posterior.nc",
+    "posterior_predictions": "data/processed/posterior_predictions_gold.csv",
+    "conformal_predictions": "data/processed/conformal_predictions_gold.csv",
+    "counterfactual": "results/counterfactual_results.json",
+    "pareto_frontier": "results/pareto_frontier.csv",
+    "ablation": "results/ablation_table.csv",
+    "paper_tables": "results/paper_tables.tex",
+    "paper_numbers": "results/paper_numbers.json",
+    "final_report": "results/final_report.json"
+  },
+  "pipeline_status": {
+    "01_script": "\u2705",
+    "02_script": "\u2705",
+    "03_script": "\u2705",
+    "04_script": "\u2705",
+    "05_script": "\u2705",
+    "06_script": "\u2705",
+    "07_script": "\u2705",
+    "08_script": "\u2705",
+    "09_script": "\u2705",
+    "010_script": "\u2705"
+  },
+  "metrics_summary": {
+    "raw_physics_MAE": 24.179,
+    "ridge_loocv_MAE": 5.01,
+    "bayesian_MAE": 5.661,
+    "bayesian_R2": 0.53,
+    "conformal_coverage_90": 0.923,
+    "rhat_max": 1.0,
+    "ess_min": 2078.0,
+    "divergences": 0
+  }
+}

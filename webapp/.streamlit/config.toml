@@ -1,0 +1,41 @@
+# .streamlit/config.toml
+# Improved theme + safe runtime defaults for development & deployment
+
+[theme]
+# Use an explicit light base for consistent rendering across environments
+base = "light"
+
+# Brand / primary accent (keeps your original choice)
+primaryColor = "#1f77b4"
+
+# Backgrounds & text (high contrast for readability)
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#31333F"
+
+# Fonts supported by Streamlit: "sans serif", "serif", "monospace"
+font = "sans serif"
+
+# ------------------------
+# Server & runtime options
+# ------------------------
+[server]
+# Run in headless mode (recommended for deployments)
+headless = true
+
+# Default port; change if your environment requires a different port
+port = 8501
+
+# Disable CORS on trusted deployments (set to true for untrusted public hosting)
+enableCORS = false
+
+# Max upload size in MB to protect the app from very large uploads
+# Increase only if you intentionally accept large files
+maxUploadSize = 200
+
+# ------------------------
+# Privacy / telemetry
+# ------------------------
+[browser]
+# Disable collection of usage stats (respects user privacy in many orgs)
+gatherUsageStats = false
