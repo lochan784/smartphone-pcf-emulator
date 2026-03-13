@@ -82,19 +82,19 @@ SMARTPHONE-LCA-EMULATOR
 data/processed/catalog_devices.csv
 ```
 
-**968 devices** with hardware specifications (source: Kaggle). Used for feature engineering and large‑scale scenario analysis.
+**968 devices** with hardware specifications (source: Kaggle). Used for feature engineering and large-scale scenario analysis.
 
 ```
 data/processed/verified_devices.csv
 ```
 
-**13 manufacturer‑verified PCFs** from Apple, Samsung, and Google Environmental Product Declarations (EPDs). Used as the gold‑standard holdout set for evaluation and conformal calibration.
+**13 manufacturer-verified PCFs** from Apple, Samsung, and Google Environmental Product Declarations (EPDs). Used as the gold-standard holdout set for evaluation and conformal calibration.
 
 ```
 data/processed/prior_params.csv
 ```
 
-Literature‑informed priors for lifecycle emission factors.
+Literature-informed priors for lifecycle emission factors.
 
 See `data/README.md` for detailed descriptions and license information.
 
@@ -212,7 +212,8 @@ make check
 ```
 
 Expected conditions:
-- R‑hat < 1.05
+
+- R-hat < 1.05
 - ESS > 200
 - Divergences = 0
 
@@ -226,7 +227,7 @@ make fast
 
 Runs the Bayesian emulator with reduced draws for debugging.
 
-## 6. Regenerate Results Without Re‑training
+## 6. Regenerate Results Without Re-training
 
 If the posterior model already exists:
 
@@ -234,7 +235,7 @@ If the posterior model already exists:
 make results
 ```
 
-Regenerates decision‑support outputs and paper tables without refitting the Bayesian model.
+Regenerates decision-support outputs and paper tables without refitting the Bayesian model.
 
 ## 7. Cleaning Generated Outputs
 
@@ -244,7 +245,7 @@ make clean
 
 Removes generated outputs while preserving models and raw data.
 
-## One‑Command Reproduction
+## One-Command Reproduction
 
 For reviewers and reproducibility checks:
 
@@ -306,6 +307,7 @@ Bayesian credible intervals assume the model is correct.
 Conformal prediction guarantees **finite-sample coverage** even if the model is misspecified.
 
 We evaluated two nonconformity scores:
+
 - absolute residuals (used in final model)
 - normalized residuals (for robustness check)
 
@@ -327,16 +329,19 @@ Possible extensions:
 # License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-```
 
 ---
 
 # Citation
 
-If you use this work, cite:
+If you use this work, please cite:
 
-```
-Physics-Informed Bayesian–Conformal Emulator for Smartphone Lifecycle Carbon Estimation
+```bibtex
+@article{lalithya2026smartphonepcf,
+  title={Physics-Informed Bayesian–Conformal Emulator for Smartphone Lifecycle Carbon Estimation},
+  author={Lochan Lalithya S},
+  year={2026}
+}
 ```
 
 ---
@@ -344,6 +349,3 @@ Physics-Informed Bayesian–Conformal Emulator for Smartphone Lifecycle Carbon E
 # Contact
 
 Open a GitHub issue for questions, reproducibility reports, or contributions.
-# License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
