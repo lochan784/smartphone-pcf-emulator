@@ -147,17 +147,57 @@ Outputs used directly in the research paper.
 
 # Installation
 
-Create a Python environment:
+### 1. Install Python
+
+Python **3.11 is recommended** for compatibility with the scientific stack (PyMC, ArviZ, NumPy).
+
+Check your version:
 
 ```bash
-python -m venv .venv
+python3 --version
+```
+
+---
+
+### 2. Create a virtual environment
+
+```bash
+python3.11 -m venv .venv
+```
+
+Activate the environment:
+
+**macOS / Linux**
+
+```bash
 source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+---
+
+### 3. Install dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Python **3.10+ recommended**.
-
 ---
+
+### 4. Verify installation
+
+```bash
+python -c "import pymc, pandas, numpy, streamlit; print('Environment OK')"
+```
+
+If successful, the environment is ready.
+
 
 # Reproducibility
 
