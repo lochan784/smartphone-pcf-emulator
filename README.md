@@ -316,7 +316,6 @@ make all
 # Running the Web App
 
 ```
-pip install streamlit
 streamlit run webapp/app.py
 ```
 
