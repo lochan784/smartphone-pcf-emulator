@@ -1,9 +1,9 @@
 model,components,MAE,RMSE,Bias,R2
 "Raw Physics (literature EFs, no calibration)",Physics only,24.179,25.503,-24.179,-6.374
-Physics + Posterior θ (no intercept),Physics + θ_posterior,22.754,24.156,-22.754,-5.615
-Physics + θ + Intercept β₀,Physics + θ + β₀,7.079,8.298,-1.753,0.219
-Physics + θ + β₀ + Brand effects,Physics + θ + β₀ + b_brand,5.718,6.49,-0.098,0.523
-Full Bayesian (θ + β₀ + Brand + h(s;φ)),All components,5.661,6.437,-0.225,0.53
-Full − Brand effects,Physics + θ + β₀ + h(s;φ),6.996,8.246,-1.88,0.229
-Full − Residual h(s;φ),Physics + θ + β₀ + Brand,5.718,6.49,-0.098,0.523
+Physics + Posterior θ (no intercept),Physics + θ_posterior,22.705,24.112,-22.705,-5.591
+Physics + θ + Intercept β₀,Physics + θ + β₀,7.089,8.314,-1.794,0.216
+Physics + θ + β₀ + Brand effects,Physics + θ + β₀ + b_brand,5.73,6.498,-0.177,0.521
+Full Bayesian (θ + β₀ + Brand + h(s;φ)),All components,5.685,6.448,-0.299,0.529
+Full − Brand effects,Physics + θ + β₀ + h(s;φ),7.006,8.261,-1.916,0.226
+Full − Residual h(s;φ),Physics + θ + β₀ + Brand,5.73,6.498,-0.177,0.521
 Ridge Calibration (LOOCV baseline),sklearn Ridge on physics features,5.01,6.83,-4.86,0.554

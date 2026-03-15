@@ -1,7 +1,7 @@
 scenario,MAE,RMSE,R2,coverage_90,rhat_max,ess_min,divergences,converged
-baseline,5.667,6.436,0.53,0.923,1.0,4282,24,True
-mean_plus_50pct,5.321,6.093,0.579,0.923,1.0,3267,7,True
-mean_minus_50pct,5.975,6.901,0.46,0.923,1.0,3001,26,True
-sd_plus_50pct,5.612,6.397,0.536,0.923,1.0,3752,68,True
-sd_minus_50pct,5.673,6.436,0.53,0.923,1.0,5213,95,True
-flat_priors,5.092,5.857,0.611,0.923,1.0,4681,15,True
+baseline,5.669,6.422,0.532,0.923,1.0,4615,20,True
+mean_plus_50pct,5.314,6.084,0.58,0.923,1.0,3928,5,True
+mean_minus_50pct,5.99,6.894,0.461,0.923,1.0,3575,20,True
+sd_plus_50pct,5.593,6.342,0.544,0.923,1.0,3872,25,True
+sd_minus_50pct,5.706,6.445,0.529,0.923,1.0,6388,44,True
+flat_priors,5.091,5.848,0.612,0.923,1.0,3493,17,True

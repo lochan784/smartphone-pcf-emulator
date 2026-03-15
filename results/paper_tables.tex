@@ -36,12 +36,12 @@ Residual SD $\sigma$           & HalfNormal  & --    & 10    & $(0, \infty)$ \\
 \textbf{Model Variant} & \textbf{MAE (kg CO$_2$e)} & \textbf{R$^2$} \\
 \hline
   Raw Physics (no calibration) & 24.179 & -6.374 \\
-  Physics + posterior $\theta$ & 22.754 & -5.615 \\
-  Physics + $\theta$ + intercept $\beta_0$ & 7.079 & 0.219 \\
-  Physics + $\theta$ + $\beta_0$ + brand & 5.718 & 0.523 \\
-  Full Bayesian (all components) & 5.661 & 0.530 \\
-  Full $-$ brand effects & 6.996 & 0.229 \\
-  Full $-$ residual $h(\mathbf{s};\phi)$ & 5.718 & 0.523 \\
+  Physics + posterior $\theta$ & 22.705 & -5.591 \\
+  Physics + $\theta$ + intercept $\beta_0$ & 7.089 & 0.216 \\
+  Physics + $\theta$ + $\beta_0$ + brand & 5.730 & 0.521 \\
+  Full Bayesian (all components) & 5.685 & 0.529 \\
+  Full $-$ brand effects & 7.006 & 0.226 \\
+  Full $-$ residual $h(\mathbf{s};\phi)$ & 5.730 & 0.521 \\
   \hline
 Ridge calibration (LOOCV) & 5.010 & 0.554 \\
 \hline
@@ -60,19 +60,19 @@ Ridge calibration (LOOCV) & 5.010 & 0.554 \\
 \hline
 \textbf{Device} & \textbf{Declared} & \textbf{Pred} & \textbf{90\% CI} & \textbf{In} \\
 \hline
-  Iphone 14 Pro Max & 73.0 & 66.5 & [54.1, 79.0] & $\checkmark$ \\
-  Iphone 13 & 64.0 & 60.8 & [48.3, 73.2] & $\checkmark$ \\
-  Iphone 15 & 56.0 & 61.8 & [49.4, 74.3] & $\checkmark$ \\
-  Iphone 14 & 61.0 & 65.8 & [53.4, 78.3] & $\checkmark$ \\
-  Iphone 14 Pro & 65.0 & 62.5 & [50.1, 75.0] & $\checkmark$ \\
-  Iphone 12 & 70.0 & 65.6 & [53.1, 78.0] & $\checkmark$ \\
-  Pixel 8 Pro & 87.0 & 80.9 & [68.5, 93.4] & $\checkmark$ \\
-  Pixel 7 & 67.0 & 73.9 & [61.4, 86.3] & $\checkmark$ \\
-  Pixel 6 & 85.0 & 74.4 & [62.0, 86.9] & $\checkmark$ \\
-  Galaxy S23 Ultra & 70.6 & 70.4 & [58.0, 82.9] & $\checkmark$ \\
-  Iphone 15 Pro Max & 75.0 & 70.2 & [57.7, 82.6] & $\checkmark$ \\
-  Galaxy S23 & 54.0 & 66.5 & [55.9, 77.0] & $\times$ \\
-  Iphone 15 Pro & 66.0 & 71.4 & [58.9, 83.8] & $\checkmark$ \\
+  Iphone 14 Pro Max & 73.0 & 66.4 & [53.8, 79.0] & $\checkmark$ \\
+  Iphone 13 & 64.0 & 60.7 & [48.2, 73.3] & $\checkmark$ \\
+  Iphone 15 & 56.0 & 61.7 & [49.2, 74.3] & $\checkmark$ \\
+  Iphone 14 & 61.0 & 65.7 & [53.2, 78.3] & $\checkmark$ \\
+  Iphone 14 Pro & 65.0 & 62.4 & [49.9, 75.0] & $\checkmark$ \\
+  Iphone 12 & 70.0 & 65.5 & [52.9, 78.1] & $\checkmark$ \\
+  Pixel 8 Pro & 87.0 & 80.7 & [68.2, 93.3] & $\checkmark$ \\
+  Pixel 7 & 67.0 & 73.7 & [61.2, 86.3] & $\checkmark$ \\
+  Pixel 6 & 85.0 & 74.3 & [61.7, 86.8] & $\checkmark$ \\
+  Galaxy S23 Ultra & 70.6 & 70.4 & [57.9, 83.0] & $\checkmark$ \\
+  Iphone 15 Pro Max & 75.0 & 70.0 & [57.5, 82.6] & $\checkmark$ \\
+  Galaxy S23 & 54.0 & 66.6 & [55.8, 77.3] & $\times$ \\
+  Iphone 15 Pro & 66.0 & 71.2 & [58.7, 83.8] & $\checkmark$ \\
 \hline
   \textbf{Coverage} & & & & \textbf{0.923} \\
   \textbf{Target ($1-\alpha$)} & & & & \textbf{0.850} \\
@@ -91,9 +91,9 @@ Ridge calibration (LOOCV) & 5.010 & 0.554 \\
 \hline
 \textbf{Scenario} & \textbf{$\Delta$PCF (kg)} & \textbf{90\% CI} & \textbf{Change} \\
 \hline
-  Grid decarbonisation (--30%) & -2.79 & [-3.86, -1.90] & -4.1\% \\
-  Next-gen battery chemistry (--25%) & -0.48 & [-0.66, -0.31] & -0.7\% \\
-  Extended device lifetime (3$\to$5 yr) & +5.61 & [+3.09, +8.48] & +8.2\% \\
+  Grid decarbonisation (--30%) & -2.78 & [-3.86, -1.90] & -4.1\% \\
+  Next-gen battery chemistry (--25%) & -0.48 & [-0.66, -0.30] & -0.7\% \\
+  Extended device lifetime (3$\to$5 yr) & +5.66 & [+3.07, +8.68] & +8.3\% \\
 \hline
 \multicolumn{4}{l}{\footnotesize $N=8000$ posterior draws. Negative = emission reduction.} \\
 \end{tabular}
@@ -111,13 +111,13 @@ Ridge calibration (LOOCV) & 5.010 & 0.554 \\
 \textbf{Budget} & \textbf{Opt PCF} & \textbf{$\Delta$PCF} & \textbf{Active Levers} \\
 (\$/device) & (kg CO$_2$e) & (kg) & \\
 \hline
-  \$0 & 46.0 & +0.00 & none \\
-  \$25 & 42.6 & +3.38 & efficient chip \\
-  \$50 & 39.8 & +6.20 & grid decarb, efficient chip \\
-  \$75 & 38.1 & +7.86 & grid decarb, recycled mat, displ... \\
-  \$100 & 38.1 & +7.86 & grid decarb, recycled mat, displ... \\
-  \$150 & 37.6 & +8.34 & grid decarb, battery nextgen, re... \\
-  \$200 & 37.6 & +8.34 & grid decarb, battery nextgen, re... \\
+  \$0 & 45.7 & +0.00 & none \\
+  \$25 & 42.4 & +3.35 & efficient chip \\
+  \$50 & 39.6 & +6.16 & grid decarb, efficient chip \\
+  \$75 & 37.9 & +7.82 & grid decarb, recycled mat, displ... \\
+  \$100 & 37.9 & +7.82 & grid decarb, recycled mat, displ... \\
+  \$150 & 37.4 & +8.30 & grid decarb, battery nextgen, re... \\
+  \$200 & 37.4 & +8.30 & grid decarb, battery nextgen, re... \\
 \hline
 \end{tabular}
 \end{table}

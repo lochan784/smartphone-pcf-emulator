@@ -1,8 +1,8 @@
 {
   "baseline": {
-    "fleet_median_kg": 68.543,
-    "fleet_lo90_kg": 64.746,
-    "fleet_hi90_kg": 72.201,
+    "fleet_median_kg": 68.451,
+    "fleet_lo90_kg": 64.639,
+    "fleet_hi90_kg": 72.129,
     "n_draws": 8000,
     "n_devices": 13
   },
@@ -11,115 +11,115 @@
       "label": "Grid decarbonisation (\u221230%)",
       "desc": "National grids decarbonise 30% \u2014 IEA net-zero pathway",
       "fleet": {
-        "delta_median_kg": -2.789,
-        "delta_lo90_kg": -3.862,
-        "delta_hi90_kg": -1.897,
-        "delta_pct": -4.07
+        "delta_median_kg": -2.776,
+        "delta_lo90_kg": -3.864,
+        "delta_hi90_kg": -1.898,
+        "delta_pct": -4.06
       },
       "per_device": [
         {
           "model": "iphone 14 pro max",
           "brand": "apple",
           "declared_pcf": 73.0,
-          "delta_median": -2.873,
-          "delta_lo90": -3.979,
-          "delta_hi90": -1.954
+          "delta_median": -2.86,
+          "delta_lo90": -3.98,
+          "delta_hi90": -1.956
         },
         {
           "model": "iphone 13",
           "brand": "apple",
           "declared_pcf": 64.0,
-          "delta_median": -2.153,
-          "delta_lo90": -2.982,
-          "delta_hi90": -1.465
+          "delta_median": -2.144,
+          "delta_lo90": -2.983,
+          "delta_hi90": -1.466
         },
         {
           "model": "iphone 15",
           "brand": "apple",
           "declared_pcf": 56.0,
-          "delta_median": -2.183,
-          "delta_lo90": -3.023,
-          "delta_hi90": -1.485
+          "delta_median": -2.173,
+          "delta_lo90": -3.025,
+          "delta_hi90": -1.486
         },
         {
           "model": "iphone 14",
           "brand": "apple",
           "declared_pcf": 61.0,
-          "delta_median": -2.179,
-          "delta_lo90": -3.018,
-          "delta_hi90": -1.482
+          "delta_median": -2.17,
+          "delta_lo90": -3.019,
+          "delta_hi90": -1.483
         },
         {
           "model": "iphone 14 pro",
           "brand": "apple",
           "declared_pcf": 65.0,
-          "delta_median": -2.127,
-          "delta_lo90": -2.945,
-          "delta_hi90": -1.447
+          "delta_median": -2.117,
+          "delta_lo90": -2.946,
+          "delta_hi90": -1.448
         },
         {
           "model": "iphone 12",
           "brand": "apple",
           "declared_pcf": 70.0,
-          "delta_median": -3.323,
-          "delta_lo90": -4.602,
-          "delta_hi90": -2.261
+          "delta_median": -3.308,
+          "delta_lo90": -4.604,
+          "delta_hi90": -2.262
         },
         {
           "model": "pixel 8 pro",
           "brand": "google",
           "declared_pcf": 87.0,
-          "delta_median": -3.323,
-          "delta_lo90": -4.602,
-          "delta_hi90": -2.261
+          "delta_median": -3.308,
+          "delta_lo90": -4.604,
+          "delta_hi90": -2.262
         },
         {
           "model": "pixel 7",
           "brand": "google",
           "declared_pcf": 67.0,
-          "delta_median": -2.894,
-          "delta_lo90": -4.008,
-          "delta_hi90": -1.969
+          "delta_median": -2.881,
+          "delta_lo90": -4.01,
+          "delta_hi90": -1.97
         },
         {
           "model": "pixel 6",
           "brand": "google",
           "declared_pcf": 85.0,
-          "delta_median": -3.067,
-          "delta_lo90": -4.246,
-          "delta_hi90": -2.086
+          "delta_median": -3.053,
+          "delta_lo90": -4.248,
+          "delta_hi90": -2.087
         },
         {
           "model": "galaxy s23 ultra",
           "brand": "samsung",
           "declared_pcf": 70.6,
-          "delta_median": -3.323,
-          "delta_lo90": -4.602,
-          "delta_hi90": -2.261
+          "delta_median": -3.308,
+          "delta_lo90": -4.604,
+          "delta_hi90": -2.262
         },
         {
           "model": "iphone 15 pro max",
           "brand": "apple",
           "declared_pcf": 75.0,
-          "delta_median": -2.892,
-          "delta_lo90": -4.005,
-          "delta_hi90": -1.968
+          "delta_median": -2.879,
+          "delta_lo90": -4.007,
+          "delta_hi90": -1.969
         },
         {
           "model": "galaxy s23",
           "brand": "samsung",
           "declared_pcf": 54.0,
-          "delta_median": -2.592,
-          "delta_lo90": -3.589,
-          "delta_hi90": -1.763
+          "delta_median": -2.58,
+          "delta_lo90": -3.591,
+          "delta_hi90": -1.764
         },
         {
           "model": "iphone 15 pro",
           "brand": "apple",
           "declared_pcf": 66.0,
-          "delta_median": -3.323,
-          "delta_lo90": -4.602,
-          "delta_hi90": -2.261
+          "delta_median": -3.308,
+          "delta_lo90": -4.604,
+          "delta_hi90": -2.262
         }
       ]
     },
@@ -127,9 +127,9 @@
       "label": "Next-gen battery chemistry (\u221225%)",
       "desc": "Solid-state/LFP cuts battery manufacturing EF by 25%",
       "fleet": {
-        "delta_median_kg": -0.479,
-        "delta_lo90_kg": -0.659,
-        "delta_hi90_kg": -0.306,
+        "delta_median_kg": -0.476,
+        "delta_lo90_kg": -0.66,
+        "delta_hi90_kg": -0.296,
         "delta_pct": -0.7
       },
       "per_device": [
@@ -137,105 +137,105 @@
           "model": "iphone 14 pro max",
           "brand": "apple",
           "declared_pcf": 73.0,
-          "delta_median": -0.493,
-          "delta_lo90": -0.679,
-          "delta_hi90": -0.316
+          "delta_median": -0.491,
+          "delta_lo90": -0.68,
+          "delta_hi90": -0.304
         },
         {
           "model": "iphone 13",
           "brand": "apple",
           "declared_pcf": 64.0,
-          "delta_median": -0.37,
-          "delta_lo90": -0.509,
-          "delta_hi90": -0.236
+          "delta_median": -0.368,
+          "delta_lo90": -0.51,
+          "delta_hi90": -0.228
         },
         {
           "model": "iphone 15",
           "brand": "apple",
           "declared_pcf": 56.0,
-          "delta_median": -0.375,
-          "delta_lo90": -0.516,
-          "delta_hi90": -0.24
+          "delta_median": -0.373,
+          "delta_lo90": -0.517,
+          "delta_hi90": -0.231
         },
         {
           "model": "iphone 14",
           "brand": "apple",
           "declared_pcf": 61.0,
-          "delta_median": -0.374,
-          "delta_lo90": -0.515,
-          "delta_hi90": -0.239
+          "delta_median": -0.372,
+          "delta_lo90": -0.516,
+          "delta_hi90": -0.231
         },
         {
           "model": "iphone 14 pro",
           "brand": "apple",
           "declared_pcf": 65.0,
-          "delta_median": -0.365,
-          "delta_lo90": -0.503,
-          "delta_hi90": -0.234
+          "delta_median": -0.363,
+          "delta_lo90": -0.504,
+          "delta_hi90": -0.225
         },
         {
           "model": "iphone 12",
           "brand": "apple",
           "declared_pcf": 70.0,
-          "delta_median": -0.571,
-          "delta_lo90": -0.785,
-          "delta_hi90": -0.365
+          "delta_median": -0.568,
+          "delta_lo90": -0.787,
+          "delta_hi90": -0.352
         },
         {
           "model": "pixel 8 pro",
           "brand": "google",
           "declared_pcf": 87.0,
-          "delta_median": -0.571,
-          "delta_lo90": -0.785,
-          "delta_hi90": -0.365
+          "delta_median": -0.568,
+          "delta_lo90": -0.787,
+          "delta_hi90": -0.352
         },
         {
           "model": "pixel 7",
           "brand": "google",
           "declared_pcf": 67.0,
-          "delta_median": -0.497,
-          "delta_lo90": -0.684,
-          "delta_hi90": -0.318
+          "delta_median": -0.494,
+          "delta_lo90": -0.685,
+          "delta_hi90": -0.307
         },
         {
           "model": "pixel 6",
           "brand": "google",
           "declared_pcf": 85.0,
-          "delta_median": -0.526,
-          "delta_lo90": -0.725,
-          "delta_hi90": -0.337
+          "delta_median": -0.524,
+          "delta_lo90": -0.726,
+          "delta_hi90": -0.325
         },
         {
           "model": "galaxy s23 ultra",
           "brand": "samsung",
           "declared_pcf": 70.6,
-          "delta_median": -0.571,
-          "delta_lo90": -0.785,
-          "delta_hi90": -0.365
+          "delta_median": -0.568,
+          "delta_lo90": -0.787,
+          "delta_hi90": -0.352
         },
         {
           "model": "iphone 15 pro max",
           "brand": "apple",
           "declared_pcf": 75.0,
-          "delta_median": -0.497,
-          "delta_lo90": -0.683,
-          "delta_hi90": -0.318
+          "delta_median": -0.494,
+          "delta_lo90": -0.685,
+          "delta_hi90": -0.307
         },
         {
           "model": "galaxy s23",
           "brand": "samsung",
           "declared_pcf": 54.0,
-          "delta_median": -0.445,
-          "delta_lo90": -0.613,
-          "delta_hi90": -0.285
+          "delta_median": -0.443,
+          "delta_lo90": -0.614,
+          "delta_hi90": -0.275
         },
         {
           "model": "iphone 15 pro",
           "brand": "apple",
           "declared_pcf": 66.0,
-          "delta_median": -0.571,
-          "delta_lo90": -0.785,
-          "delta_hi90": -0.365
+          "delta_median": -0.568,
+          "delta_lo90": -0.787,
+          "delta_hi90": -0.352
         }
       ]
     },
@@ -243,115 +243,115 @@
       "label": "Extended device lifetime (3\u21925 yr)",
       "desc": "EU right-to-repair extends average lifetime to 5 years",
       "fleet": {
-        "delta_median_kg": 5.613,
-        "delta_lo90_kg": 3.091,
-        "delta_hi90_kg": 8.48,
-        "delta_pct": 8.19
+        "delta_median_kg": 5.66,
+        "delta_lo90_kg": 3.072,
+        "delta_hi90_kg": 8.678,
+        "delta_pct": 8.27
       },
       "per_device": [
         {
           "model": "iphone 14 pro max",
           "brand": "apple",
           "declared_pcf": 73.0,
-          "delta_median": 5.783,
-          "delta_lo90": 3.185,
-          "delta_hi90": 8.736
+          "delta_median": 5.831,
+          "delta_lo90": 3.165,
+          "delta_hi90": 8.941
         },
         {
           "model": "iphone 13",
           "brand": "apple",
           "declared_pcf": 64.0,
-          "delta_median": 4.334,
-          "delta_lo90": 2.387,
-          "delta_hi90": 6.548
+          "delta_median": 4.37,
+          "delta_lo90": 2.372,
+          "delta_hi90": 6.701
         },
         {
           "model": "iphone 15",
           "brand": "apple",
           "declared_pcf": 56.0,
-          "delta_median": 4.395,
-          "delta_lo90": 2.42,
-          "delta_hi90": 6.639
+          "delta_median": 4.431,
+          "delta_lo90": 2.405,
+          "delta_hi90": 6.794
         },
         {
           "model": "iphone 14",
           "brand": "apple",
           "declared_pcf": 61.0,
-          "delta_median": 4.386,
-          "delta_lo90": 2.416,
-          "delta_hi90": 6.627
+          "delta_median": 4.423,
+          "delta_lo90": 2.4,
+          "delta_hi90": 6.782
         },
         {
           "model": "iphone 14 pro",
           "brand": "apple",
           "declared_pcf": 65.0,
-          "delta_median": 4.281,
-          "delta_lo90": 2.357,
-          "delta_hi90": 6.467
+          "delta_median": 4.317,
+          "delta_lo90": 2.343,
+          "delta_hi90": 6.618
         },
         {
           "model": "iphone 12",
           "brand": "apple",
           "declared_pcf": 70.0,
-          "delta_median": 6.689,
-          "delta_lo90": 3.683,
-          "delta_hi90": 10.105
+          "delta_median": 6.745,
+          "delta_lo90": 3.66,
+          "delta_hi90": 10.341
         },
         {
           "model": "pixel 8 pro",
           "brand": "google",
           "declared_pcf": 87.0,
-          "delta_median": 6.689,
-          "delta_lo90": 3.683,
-          "delta_hi90": 10.105
+          "delta_median": 6.745,
+          "delta_lo90": 3.66,
+          "delta_hi90": 10.341
         },
         {
           "model": "pixel 7",
           "brand": "google",
           "declared_pcf": 67.0,
-          "delta_median": 5.826,
-          "delta_lo90": 3.208,
-          "delta_hi90": 8.801
+          "delta_median": 5.875,
+          "delta_lo90": 3.188,
+          "delta_hi90": 9.007
         },
         {
           "model": "pixel 6",
           "brand": "google",
           "declared_pcf": 85.0,
-          "delta_median": 6.172,
-          "delta_lo90": 3.399,
-          "delta_hi90": 9.324
+          "delta_median": 6.224,
+          "delta_lo90": 3.378,
+          "delta_hi90": 9.543
         },
         {
           "model": "galaxy s23 ultra",
           "brand": "samsung",
           "declared_pcf": 70.6,
-          "delta_median": 6.689,
-          "delta_lo90": 3.683,
-          "delta_hi90": 10.105
+          "delta_median": 6.745,
+          "delta_lo90": 3.66,
+          "delta_hi90": 10.341
         },
         {
           "model": "iphone 15 pro max",
           "brand": "apple",
           "declared_pcf": 75.0,
-          "delta_median": 5.822,
-          "delta_lo90": 3.206,
-          "delta_hi90": 8.795
+          "delta_median": 5.87,
+          "delta_lo90": 3.186,
+          "delta_hi90": 9.001
         },
         {
           "model": "galaxy s23",
           "brand": "samsung",
           "declared_pcf": 54.0,
-          "delta_median": 5.217,
-          "delta_lo90": 2.873,
-          "delta_hi90": 7.882
+          "delta_median": 5.261,
+          "delta_lo90": 2.855,
+          "delta_hi90": 8.066
         },
         {
           "model": "iphone 15 pro",
           "brand": "apple",
           "declared_pcf": 66.0,
-          "delta_median": 6.689,
-          "delta_lo90": 3.683,
-          "delta_hi90": 10.105
+          "delta_median": 6.745,
+          "delta_lo90": 3.66,
+          "delta_hi90": 10.341
         }
       ]
     }

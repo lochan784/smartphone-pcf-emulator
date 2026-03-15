@@ -11,50 +11,50 @@
     {
       "model": "Physics + Posterior \u03b8 (no intercept)",
       "components": "Physics + \u03b8_posterior",
-      "MAE": 22.754,
-      "RMSE": 24.156,
-      "Bias": -22.754,
-      "R2": -5.615
+      "MAE": 22.705,
+      "RMSE": 24.112,
+      "Bias": -22.705,
+      "R2": -5.591
     },
     {
       "model": "Physics + \u03b8 + Intercept \u03b2\u2080",
       "components": "Physics + \u03b8 + \u03b2\u2080",
-      "MAE": 7.079,
-      "RMSE": 8.298,
-      "Bias": -1.753,
-      "R2": 0.219
+      "MAE": 7.089,
+      "RMSE": 8.314,
+      "Bias": -1.794,
+      "R2": 0.216
     },
     {
       "model": "Physics + \u03b8 + \u03b2\u2080 + Brand effects",
       "components": "Physics + \u03b8 + \u03b2\u2080 + b_brand",
-      "MAE": 5.718,
-      "RMSE": 6.49,
-      "Bias": -0.098,
-      "R2": 0.523
+      "MAE": 5.73,
+      "RMSE": 6.498,
+      "Bias": -0.177,
+      "R2": 0.521
     },
     {
       "model": "Full Bayesian (\u03b8 + \u03b2\u2080 + Brand + h(s;\u03c6))",
       "components": "All components",
-      "MAE": 5.661,
-      "RMSE": 6.437,
-      "Bias": -0.225,
-      "R2": 0.53
+      "MAE": 5.685,
+      "RMSE": 6.448,
+      "Bias": -0.299,
+      "R2": 0.529
     },
     {
       "model": "Full \u2212 Brand effects",
       "components": "Physics + \u03b8 + \u03b2\u2080 + h(s;\u03c6)",
-      "MAE": 6.996,
-      "RMSE": 8.246,
-      "Bias": -1.88,
-      "R2": 0.229
+      "MAE": 7.006,
+      "RMSE": 8.261,
+      "Bias": -1.916,
+      "R2": 0.226
     },
     {
       "model": "Full \u2212 Residual h(s;\u03c6)",
       "components": "Physics + \u03b8 + \u03b2\u2080 + Brand",
-      "MAE": 5.718,
-      "RMSE": 6.49,
-      "Bias": -0.098,
-      "R2": 0.523
+      "MAE": 5.73,
+      "RMSE": 6.498,
+      "Bias": -0.177,
+      "R2": 0.521
     },
     {
       "model": "Ridge Calibration (LOOCV baseline)",
@@ -70,25 +70,25 @@
       "alpha": 0.05,
       "target": 0.95,
       "coverage": 0.923,
-      "avg_width_kg": 24.622
+      "avg_width_kg": 24.834
     },
     {
       "alpha": 0.1,
       "target": 0.9,
       "coverage": 0.923,
-      "avg_width_kg": 24.622
+      "avg_width_kg": 24.834
     },
     {
       "alpha": 0.15,
       "target": 0.85,
       "coverage": 0.923,
-      "avg_width_kg": 24.622
+      "avg_width_kg": 24.834
     },
     {
       "alpha": 0.2,
       "target": 0.8,
       "coverage": 0.846,
-      "avg_width_kg": 20.401
+      "avg_width_kg": 20.607
     }
   ]
 }

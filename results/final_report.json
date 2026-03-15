@@ -1,5 +1,5 @@
 {
-  "report_generated_at": "2026-02-19T06:30:54.674897+00:00",
+  "report_generated_at": "2026-03-15T18:16:59.480537+00:00",
   "phases_completed": [
     1,
     2,
@@ -16,7 +16,7 @@
   "gates": {
     "G1_bayesian_convergence": {
       "rhat_max": 1.0,
-      "ess_min": 2078.0,
+      "ess_min": 1984.0,
       "divergences": 0,
       "passed": true
     },
@@ -27,8 +27,8 @@
     },
     "G3_mae_improvement": {
       "raw_physics_MAE": 24.179,
-      "full_bayesian_MAE": 5.661,
-      "improvement_kg": 18.518,
+      "full_bayesian_MAE": 5.685,
+      "improvement_kg": 18.494,
       "passed": true
     },
     "G4_counterfactual_plausibility": {
@@ -39,7 +39,7 @@
     },
     "G5_optimiser_improvement": {
       "prob_improvement": 1.0,
-      "delta_pcf_median": -6.183,
+      "delta_pcf_median": -6.135,
       "passed": true
     }
   },
@@ -69,11 +69,11 @@
   "metrics_summary": {
     "raw_physics_MAE": 24.179,
     "ridge_loocv_MAE": 5.01,
-    "bayesian_MAE": 5.661,
-    "bayesian_R2": 0.53,
+    "bayesian_MAE": 5.685,
+    "bayesian_R2": 0.529,
     "conformal_coverage_90": 0.923,
     "rhat_max": 1.0,
-    "ess_min": 2078.0,
+    "ess_min": 1984.0,
     "divergences": 0
   }
 }

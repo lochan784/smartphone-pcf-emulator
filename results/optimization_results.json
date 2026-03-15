@@ -1,36 +1,36 @@
 {
-  "baseline_pcf": 46.192,
+  "baseline_pcf": 45.73,
   "solver": "exact_dp_knapsack",
   "levers": [
     {
       "id": "grid_decarb",
       "label": "Grid decarbonisation (\u221230%)",
       "cost": 20.0,
-      "pcf_reduction_kg": 2.833
+      "pcf_reduction_kg": 2.815
     },
     {
       "id": "battery_nextgen",
       "label": "Next-gen battery chemistry (\u221225%)",
       "cost": 35.0,
-      "pcf_reduction_kg": 0.479
+      "pcf_reduction_kg": 0.477
     },
     {
       "id": "recycled_mat",
       "label": "30% recycled material content",
       "cost": 15.0,
-      "pcf_reduction_kg": 1.064
+      "pcf_reduction_kg": 1.051
     },
     {
       "id": "display_opt",
       "label": "Low-energy OLED display (\u221220%)",
       "cost": 8.0,
-      "pcf_reduction_kg": 0.603
+      "pcf_reduction_kg": 0.607
     },
     {
       "id": "efficient_chip",
       "label": "Next-node semiconductor (\u221215%)",
       "cost": 25.0,
-      "pcf_reduction_kg": 3.41
+      "pcf_reduction_kg": 3.346
     }
   ],
   "recommended_50": {
@@ -39,9 +39,9 @@
       "efficient_chip"
     ],
     "cost": 45.0,
-    "delta_pcf_median": -6.234,
-    "delta_pcf_lo90": -8.141,
-    "delta_pcf_hi90": -4.443,
+    "delta_pcf_median": -6.135,
+    "delta_pcf_lo90": -8.111,
+    "delta_pcf_hi90": -4.246,
     "prob_improvement": 1.0
   }
 }
