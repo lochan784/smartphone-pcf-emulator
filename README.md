@@ -147,56 +147,73 @@ Outputs used directly in the research paper.
 
 # Installation
 
-### 1. Install Python
+Requirements
 
-Python **3.11 is recommended** for compatibility with the scientific stack (PyMC, ArviZ, NumPy).
+* Python **3.11** (recommended; this project was developed and tested on Python 3.11)
+* macOS or Linux terminal (Windows works with PowerShell using the equivalent activation command)
 
-Check your version:
-
-```bash
-python3 --version
-```
-
----
-
-### 2. Create a virtual environment
+Create the virtual environment used by the Makefile:
 
 ```bash
-python3.11 -m venv .venv
+python3.11 -m venv .venv311
 ```
 
-Activate the environment:
+Activate the environment.
 
-**macOS / Linux**
+macOS / Linux:
 
 ```bash
-source .venv/bin/activate
+source .venv311/bin/activate
 ```
 
-**Windows**
+Windows (PowerShell):
 
-```bash
-.venv\Scripts\activate
+```powershell
+.venv311\Scripts\Activate.ps1
 ```
 
----
-
-### 3. Install dependencies
+Upgrade pip and install the project dependencies:
 
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
----
-
-### 4. Verify installation
+Verify the environment by importing the core packages:
 
 ```bash
-python -c "import pymc, pandas, numpy, streamlit; print('Environment OK')"
+python -c "import pymc, arviz, numpy, pandas, streamlit, IPython, h5py; print('Environment OK')"
 ```
 
-If successful, the environment is ready.
+Expected output:
+
+```
+Environment OK
+```
+
+Run the full research pipeline (feature engineering → model training → conformal calibration → counterfactual analysis → optimization → paper artifacts):
+
+```bash
+make all
+```
+
+You can also run individual stages:
+
+```bash
+make preprocess
+make fit
+make conformal
+make decision
+make paper
+```
+
+Notes:
+
+* The Makefile executes scripts using `.venv311/bin/python`, so ensure the `.venv311` environment exists before running `make`.
+* Some runs may show warnings related to `pkg_resources` or BLAS backends; these are expected and do not affect results.
+* The repository pins `setuptools<81` so that `pkg_resources` remains available for ArviZ/PyMC compatibility.
+* All generated artifacts (tables, JSON results, CSV outputs) will appear in the `results/` directory.
+
 
 
 # Reproducibility
