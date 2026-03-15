@@ -39,7 +39,6 @@ baseline:
 
 fit:
 	$(PYTHON) -m scripts.04_fit_bayesian_emulator $(FIT_FLAGS)
-	$(PYTHON) -m scripts.10_final_report
 
 # -----------------------------
 # Conformal certification
