@@ -1,6 +1,6 @@
 # Python 3.11 required
 
-# Core scientific stack
+# Core scientific stack (stable set for this repo)
 numpy==1.26.4
 pandas==2.1.4
 scipy==1.11.4
@@ -9,6 +9,15 @@ pymc==5.10.0
 arviz==0.15.1
 joblib==1.3.2
 matplotlib==3.7.5
+
+# NetCDF / persistence used by ArviZ/xarray
+h5py==3.16.0
+
+# Interactive / progress utilities required by PyMC/fastprogress
+ipython==8.17.0
+
+# Ensure pkg_resources is available for ArviZ / older libs
+setuptools<81
 
 # Web app
 streamlit==1.28.1
