@@ -1,13 +1,15 @@
 # Makefile — aligned with paper methodology
 .PHONY: help all preprocess baseline fit conformal decision paper results env clean fast check
 
+export PYTHONPATH := .
+
 PYTHON ?= .venv311/bin/python
 PYTHON3 ?= python3.11
 SCRIPTS := scripts
 
 # Sampling parameters (from paper)
-FIT_FLAGS ?= --chains 4 --draws 2000 --target_accept 0.95 --seed 42
-FAST_FLAGS ?= --chains 2 --draws 500 --target_accept 0.9 --seed 42
+FIT_FLAGS ?= --chains 4 --draws 2000 --target-accept 0.95 --seed 42
+FAST_FLAGS ?= --chains 2 --draws 500 --target-accept 0.9 --seed 42
 
 # -----------------------------
 # Full pipeline (reproduce paper)
@@ -21,59 +23,59 @@ all: preprocess baseline fit conformal decision paper
 # -----------------------------
 
 preprocess:
-	$(PYTHON) $(SCRIPTS)/01_engineer_structured_features.py
-	$(PYTHON) $(SCRIPTS)/02_merge_with_benchmark.py
+	$(PYTHON) -m scripts.01_engineer_structured_features
+	$(PYTHON) -m scripts.02_merge_with_benchmark
 
 # -----------------------------
 # Ridge baseline
 # -----------------------------
 
 baseline:
-	$(PYTHON) $(SCRIPTS)/03_train_brand_calibrator.py
+	$(PYTHON) -m scripts.03_train_brand_calibrator
 
 # -----------------------------
 # Bayesian hierarchical emulator
 # -----------------------------
 
 fit:
-	$(PYTHON) $(SCRIPTS)/04_fit_bayesian_emulator.py $(FIT_FLAGS)
+	$(PYTHON) -m scripts.04_fit_bayesian_emulator $(FIT_FLAGS)
 
 # -----------------------------
 # Conformal certification
 # -----------------------------
 
 conformal:
-	$(PYTHON) $(SCRIPTS)/05_conformal_certification.py
+	$(PYTHON) -m scripts.05_conformal_certification
 
 # -----------------------------
 # Decision support layer
 # -----------------------------
 
 decision:
-	$(PYTHON) $(SCRIPTS)/06_counterfactual_simulation.py
-	$(PYTHON) $(SCRIPTS)/07_optimization.py
+	$(PYTHON) -m scripts.06_counterfactual_simulation
+	$(PYTHON) -m scripts.07_optimization
 
 # -----------------------------
 # Paper outputs
 # -----------------------------
 
 paper:
-	$(PYTHON) $(SCRIPTS)/08_ablation.py
-	$(PYTHON) $(SCRIPTS)/09_prior_sensitivity.py
-	$(PYTHON) $(SCRIPTS)/generate_paper_tables.py
-	$(PYTHON) $(SCRIPTS)/10_final_report.py
+	$(PYTHON) -m scripts.08_ablation
+	$(PYTHON) -m scripts.09_prior_sensitivity
+	$(PYTHON) -m scripts.generate_paper_tables
+	$(PYTHON) -m scripts.10_final_report
 
 # -----------------------------
 # Results only (skip training)
 # -----------------------------
 
 results:
-	$(PYTHON) $(SCRIPTS)/06_counterfactual_simulation.py
-	$(PYTHON) $(SCRIPTS)/07_optimization.py
-	$(PYTHON) $(SCRIPTS)/08_ablation.py
-	$(PYTHON) $(SCRIPTS)/09_prior_sensitivity.py
-	$(PYTHON) $(SCRIPTS)/generate_paper_tables.py
-	$(PYTHON) $(SCRIPTS)/10_final_report.py
+	$(PYTHON) -m scripts.06_counterfactual_simulation
+	$(PYTHON) -m scripts.07_optimization
+	$(PYTHON) -m scripts.08_ablation
+	$(PYTHON) -m scripts.09_prior_sensitivity
+	$(PYTHON) -m scripts.generate_paper_tables
+	$(PYTHON) -m scripts.10_final_report
 
 # -----------------------------
 # Quick convergence check
@@ -91,7 +93,7 @@ print('PASS' if d['rhat_max'] < 1.05 and d['ess_min'] > 200 and d['divergences']
 # -----------------------------
 
 fast:
-	$(PYTHON) $(SCRIPTS)/04_fit_bayesian_emulator.py $(FAST_FLAGS)
+	$(PYTHON) -m scripts.04_fit_bayesian_emulator $(FAST_FLAGS)
 
 # -----------------------------
 # Environment setup
