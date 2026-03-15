@@ -8,7 +8,7 @@ PYTHON3 ?= python3.11
 SCRIPTS := scripts
 
 # Sampling parameters (from paper)
-FIT_FLAGS ?= --chains 4 --draws 2000 --target-accept 0.95 --seed 42
+FIT_FLAGS ?= --chains 4 --draws 2000 --target-accept 0.99 --seed 42
 FAST_FLAGS ?= --chains 2 --draws 500 --target-accept 0.9 --seed 42
 
 # -----------------------------
