@@ -7,7 +7,7 @@
 - **Usage**: This is the gold‑standard holdout set used for evaluation and conformal calibration.
 
 ## catalog_devices.csv
-- **Source**: Kaggle dataset "Smartphone Specifications and Prices" (link: https://www.kaggle.com/datasets/...). Please replace with the actual Kaggle URL or citation.
+- **Source**: Kaggle dataset "Smartphone Specifications and Prices" (link: [https://www.kaggle.com/datasets/...)](https://www.kaggle.com/datasets/devgondaliya007/smartphone-specifications-dataset?utm_source=chatgpt.com). Please replace with the actual Kaggle URL or citation.
 - **Content**: 968 devices with detailed hardware specifications (no PCF values).
 - **Columns**: Similar to `verified_devices.csv` but without the `PCF` column. Includes brand, model, release year, battery capacity, display size, mass, chip details, etc.
 - **Usage**: Used for feature engineering, generating synthetic training data, and large‑scale scenario simulations.
